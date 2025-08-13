@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +6,9 @@
     <title>Backztitch</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
+        :root {
+            --brand-green: #39B54A; /* main green from logo */
+        }
         body {
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
@@ -20,7 +22,7 @@
         }
         header img {
             width: 100%;
-            max-width: 800px;
+            max-width: 1000px;
             height: auto;
         }
         header p {
@@ -38,15 +40,16 @@
         a.button {
             display: block;
             padding: 15px;
-            background-color: #222;
+            background-color: var(--brand-green);
             color: #fff;
             text-decoration: none;
             border-radius: 8px;
             font-size: 1.1em;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.1s ease;
         }
         a.button:hover {
-            background-color: #555;
+            background-color: #2f9b3e;
+            transform: scale(1.02);
         }
         footer {
             margin-top: 40px;
